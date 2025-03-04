@@ -1,0 +1,135 @@
+@import './variables.css';
+
+.d-none {
+  display: none !important;
+}  
+
+@media screen and (min-width: 992px) {
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+}
+
+.out-100 {
+  font-family: var(--f-out);
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.out-200 {
+  font-family: var(--f-out);
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.out-300 {
+  font-family: var(--f-out);
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.out-400 {
+  font-family: var(--f-out);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.out-500 {
+  font-family: var(--f-out);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.out-600 {
+  font-family: var(--f-out);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.out-700 {
+  font-family: var(--f-out);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.out-800 {
+  font-family: var(--f-out);
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.out-900 {
+  font-family: var(--f-out);
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merri-light {
+  font-family: var(--f-merry);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merri-regular {
+  font-family: var(--f-merry);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merri-bold {
+  font-family: var(--f-merry);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merri-black {
+  font-family: var(--f-merry);
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merri-light-italic {
+  font-family: var(--f-merry);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merri-regular-italic {
+  font-family: var(--f-merry);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merri-bold-italic {
+  font-family: var(--f-merry);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merri-black-italic {
+  font-family: var(--f-merry);
+  font-weight: 900;
+  font-style: italic;
+}
+

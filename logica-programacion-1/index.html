@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="stylesheet" href="./styles/style.css" >
+		<link rel="shortcut icon" href="img/logoTacIco4Chrome.ico" type="image/x-icon">
+		<title>Ordenar 3 números!</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="left-nav" id="left-nav">
+					<li class="d-lg-none title merri-black-italic">
+						Lógica de programación
+					</li>
+					<li>
+						<a href="#" class="active">Ordenar 3 números</a>
+					</li>
+					<li>
+						<a href="https://tacmoralesgen.github.io/logica-programacion-2/">Convertir grados celsius</a>
+					</li>
+					<li>
+						<a href="https://tacmoralesgen.github.io/logica-programacion-3/">Cálcular un factorial</a>
+					</li>
+				</ul>
+				<a href="#" class="title merri-black-italic d-none d-lg-block"> Lógica de programación </a>
+				<ul class="right-nav">
+					<li class="icon-menu toggle-menu d-md-none" id="toggle-menu" data-state="CLOSE">
+						<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 16 16">
+							<path fill="currentColor">
+						</svg>
+					</li>
+					<li class="repo">
+						<a href="#"><span>Ver repositorio</span><span class="icon-github"></span></a>
+					</li>
+					<li class="switch-container">
+						<input type="checkbox" id="theme" role="switch" name="theme" value="light" data-state="CLOSE" >
+						<label for="theme" class="switch"></label>
+					</li>
+				</ul>
+			</nav>
+			<h1 class="merri-bold title">Ordenar 3 números</h1>
+		</header>
+		<main>
+			<section class="leftMain">
+				<h2>Ingrese los números a ordenar</h2>
+				<div class="inputs-container">
+					<div class="input-container">
+						<label for="firstN">Primer<br class="d-lg-none"> número</label>
+						<input type="number" name="firstN" id="firstN" >
+					</div>
+					<div class="input-container">
+						<label for="secondN">Segundo<br class="d-lg-none"> número</label>
+						<input type="number" name="secondN" id="secondN" >
+					</div>
+					<div class="input-container">
+						<label for="thirdN">Tercer<br class="d-lg-none"> número</label>
+						<input type="number" name="thirdN" id="thirdN" >
+					</div>
+				</div>
+				<button type="button" id="btn-order">Ordenar</button>
+			</section>
+			<section class="rightMain">
+				<table>
+					<caption>
+						<h2>Números ordenados</h2>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Ascendente</th>
+							<th scope="col">Descendente</th>
+						</tr>
+					</thead>
+					<tbody id="table-body">
+						<tr>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+		<script type="module" src="./scripts/navbar.js"></script>
+		<script type="module" src="./scripts/script.js"></script>
+	</body>
+</html>

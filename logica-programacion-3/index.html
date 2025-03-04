@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="stylesheet" href="./styles/style.css" >
+		<link rel="shortcut icon" href="img/logoTacIco4Chrome.ico" type="image/x-icon">
+		<title>Calcular un factorial</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="left-nav" id="left-nav">
+					<li class="d-lg-none title merri-black-italic">
+						Lógica de programación
+					</li>
+					<li>
+						<a href="https://tacmoralesgen.github.io/logica-programacion-1/">Ordenar 3 números</a>
+					</li>
+					<li>
+						<a href="https://tacmoralesgen.github.io/logica-programacion-2/">Convertir grados celsius</a>
+					</li>
+					<li>
+						<a href="#" class="active">Calcular un factorial</a>
+					</li>
+				</ul>
+				<a href="#" class="title merri-black-italic d-none d-lg-block"> Lógica de programación </a>
+				<ul class="right-nav">
+					<li class="icon-menu toggle-menu d-md-none" id="toggle-menu" data-state="CLOSE">
+						<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 16 16">
+							<path fill="currentColor">
+						</svg>
+					</li>
+					<li class="repo">
+						<a href="#"><span>Ver repositorio</span><span class="icon-github"></span></a>
+					</li>
+					<li class="switch-container">
+						<input type="checkbox" id="theme" role="switch" name="theme" value="light" data-state="CLOSE" >
+						<label for="theme" class="switch"></label>
+					</li>
+				</ul>
+			</nav>
+			<h1 class="merri-bold title">Calcular un factorial</h1>
+		</header>
+		<main>
+			<section class="leftMain">
+				<h2>Ingrese un número...</h2>
+				<div class="inputs-container">
+					<div class="input-container">
+						<label for="firstN">...para calcular su factorial</label>
+						<div class="input-C">
+							<input type="number" name="firstN" id="firstN" value="0">
+							<span class="float">!</span>
+						</div>
+					</div>
+				</div>
+				<button type="button" id="btn-order">Calcular factorial</button>
+				<details>
+					<summary>Solo números enteros mayores o iguales a 0</summary>
+					Podemos definir el factorial de un número entero positivo n, expresado n!, como el producto de todos los números enteros positivos menores o iguales que n. <br> De acuerdo con la convención matemática de producto vacío, el valor de 0! = 1 <br> Existen extensiones a esta definición como la función gamma y su alternativa con limites, en vez de con integral. Pero esto solo extiende para todos los números complejo Z excepto los negativos que NO sean entero. Para mayor información visitar: <a href="https://es.wikipedia.org/wiki/Factorial">wiki del factorial</a>
+			</details>
+			</section>
+			<section class="rightMain">
+				<h2>Calculo factorial:</h2>
+				<p id="details" class="details">0! =&gt;<br>Para cumplir con la convención del producto vacío =&gt;<br></p>
+				<p id="result" class="result out-700">0! = 1</p>
+			</section>
+		</main>
+		<script type="module" src="./scripts/navbar.js"></script>
+		<script type="module" src="./scripts/script.js"></script>
+	</body>
+</html>
+
+

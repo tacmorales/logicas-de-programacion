@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+#fibonacciForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+input {
+  text-align: center;
+  width: calc(100% - 20px - 40%);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s ease;
+  &:focus {
+    border-color: #ffcc00;
+  }
+}
+
+button {
+  width: 40%;
+  padding: 10px 20px;
+  background-color: hsla(56, 99%, 47%, 0.8);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: hsla(56, 99%, 47%, 1);
+  }
+}
+
+/* Estilos del resultado */
+.resultado {
+  margin-block: 20px;
+  font-size: 1.2em;
+  color: #333;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+  }
+}
+
+.error {
+  color: #ff4444;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Animación para el resultado */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resultado p {
+  animation: fadeIn 0.5s ease-in-out;
+}

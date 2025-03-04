@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  /* y de yellow*/
+  --huey: 44;
+  --y: hsl(var(--huey), 100%, 50%);
+  --y-1: hsl(var(--huey), 100%, 92%);
+  --y-2: hsl(var(--huey), 100%, 84%);
+  --y-3: hsl(var(--huey), 100%, 75%);
+  --y-4: hsl(var(--huey), 100%, 66%);
+  --y-6: hsl(var(--huey), 81%, 43%);
+  --y-7: hsl(var(--huey), 72%, 33%);
+  --y-8: hsl(var(--huey), 63%, 23%);
+  --y-9: hsl(var(--huey), 49%, 13%);
+
+  /* b de blue*/
+  --hueb: 230;
+  --b: hsl(var(--hueb), 100%, 51%);
+  --b-1: hsl(var(--hueb), 100%, 92%);
+  --b-2: hsl(var(--hueb), 100%, 85%);
+  --b-3: hsl(var(--hueb), 100%, 77%);
+  --b-6: hsl(var(--hueb), 74%, 45%);
+  --b-7: hsl(var(--hueb), 62%, 35%);
+  --b-8: hsl(var(--hueb), 51%, 25%);
+  --b-9: hsl(var(--hueb), 42%, 14%);
+  --b-4: hsl(var(--hueb), 9%, 4%);
+
+
+  /* g de grey*/
+  --g: #6c757d;
+  --g-1: #f8f9fa;
+  --g-2: #e9ecef;
+  --g-3: #dee2e6;
+  --g-4: #ced4da;
+  --g-5: #adb5bd;
+  --g-6: #6c757d;
+  --g-7: #495057;
+  --g-8: #343a40;
+  --g-9: #212529;
+
+  --f-out: "Outfit", "Trebuchet MS", Helvetica, sans-serif;
+  --f-mono: "Courier New", Courier, monospace;
+  --f-merry: "Merriweather", serif;
+
+  --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --body-font-size: 1rem;
+  --body-font-weight: 400;
+  --body-line-height: 1.5;
+
+  --border-width: 1px;
+  --border-color-translucent: rgba(0, 0, 0, 0.175);
+  --border-radius: 0.375rem;
+  --border-radius-sm: 0.25rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-xl: 1rem;
+  --border-radius-xxl: 2rem;
+  --border-radius-pill: 50rem;
+
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+
+  --focus-ring-width: 0.25rem;
+  --focus-ring-color: rgba(13, 110, 253, var(--focus-ring-opacity));
+
+  --fluid-spacing: clamp(0.5rem, -1.413rem + 9.5652vw, 6rem);
+  --fluid-size-navbar-title: clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem);
+  --fluid-size-navbar-title-md: clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem);
+  --fluid-size-navbar-title-lg: clamp(1.5rem, 1.3rem + 0.6vw, 2rem);
+}
+

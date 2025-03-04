@@ -1,0 +1,149 @@
+@import './variables.css';
+
+:root{
+  --border: 3px solid var(--y);
+  --noborder: 0 solid;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+
+}
+
+main{
+  background-color: var(--b-1);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+section.leftMain {
+  border-inline: var(--border);
+  border-block-start: var(--border);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 768px) {
+    border-inline-start: var(--border);
+    border-inline-end: var(--noborder);
+    border-block: var(--border);
+  }
+}
+
+section.rightMain {
+  border: var(--border);
+}
+
+div.inputs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    flex-direction: column
+  }
+}
+
+div.input-container {
+  z-index: 2;
+  background-color: var(--b-1);
+  flex: 1 1 0;
+  width: 50%;
+  max-width: 50%;
+  margin-inline: .3rem;
+
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    width: 50%;
+    max-width: 50%;
+    padding-block: .6rem;
+  }
+}
+
+div.input-C {
+
+}
+
+div.input-container input {
+  margin-top: 0.3rem;
+  border-color: var(--y-6);
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  height: 2rem;
+}
+
+div.input-container input.error {
+  border-color: hsl(0, 100%, 36%);
+}
+
+div.input-container label {
+  text-align: center;
+}
+
+section.leftMain button {
+  margin: 1rem;
+  font-size:larger;
+  min-width: 120px;
+  max-width: 180px;
+  margin-bottom: 1.5rem;
+  padding: .3rem;
+
+  background-color: var(--y-3);
+  border-color: var(--y-6);
+  border-width: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main h2 {
+  text-align:center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.rightMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rightMain p.details{
+  max-width: 450px;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+}
+
+.rightMain p.result{
+  font-size: 2rem;
+  padding-block: 1rem;
+}
+
+.float{
+  position: absolute;
+  top: 30%;
+  right: 12%;
+}
+
+.input-C{
+  position: relative;
+}
+
+details {
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+}

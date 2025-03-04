@@ -1,0 +1,9 @@
+@import './general/reset.css';
+@import './general/variables.css';
+@import './style_components/switch-toggle.css';
+@import './style_components/header.css';
+@import './style_components/main.css';
+@import './general/utilities.css';
+
+
+
